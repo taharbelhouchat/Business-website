@@ -1,37 +1,90 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "variables";
+@import "base";
+
+// Top Bar
+.topbar {
+  background: $primary-color;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 00 0.6rem;
+
+  .text {
+    p {
+      a {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .social {
+    i {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
-body {
-  font-family: "Muli", sans-serif;
-}
-
+// Nav Bar
 nav {
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
+  line-height: 6rem;
+
+  .brand {
+    font-size: 3rem;
+  }
+
+  .nav-box {
+    display: flex;
+    a {
+      color: $dark-color;
+      display: inline-block;
+    }
+
+    ul.navbar {
+      list-style: none;
+      display: flex;
+      li {
+        a {
+          margin-right: 2rem;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .icons {
+      a {
+        margin-left: 1rem;
+      }
+    }
+  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
+// Header
+header {
+  height: calc(100vh - 7.5rem);
+  background: url("../img/header.jpg") no-repeat top / cover;
+  position: relative;
+  color: #fff;
+
+  .box {
+    padding-top: 8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10vw;
+    position: absolute;
+    width: 40vw;
+    h1 {
+      font-size: 4rem;
+      text-transform: capitalize;
+    }
+    p {
+      padding-bottom: 1.5rem;
+    }
+  }
 }
 
-h1 {
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 600;
-}
-
-h3 {
-  font-weight: 500;
-}
+// header Bottom Boxes

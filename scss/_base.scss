@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+}
+
+nav {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Muli", sans-serif !important;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  color: #fff;
+
+  &-green {
+    background: $green-color;
+
+    &:hover {
+      background-color: darken($green-color, 10);
+    }
+  }
+
+  &-dark {
+    background: $dark-color;
+
+    &:hover {
+      background: darken($dark-color, 10);
+    }
+  }
+}
