@@ -213,3 +213,11 @@ header {
       text-transform: capitalize; }
     header .box p {
       padding-bottom: 1.5rem; }
+
+.boxes {
+  background: #373d41;
+  color: #fff; }
+  .boxes .box {
+    margin: 2rem 1rem; }
+    .boxes .box .icon {
+      margin-right: 1rem; }
