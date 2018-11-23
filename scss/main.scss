@@ -91,3 +91,15 @@ header {
 }
 
 // header Bottom Boxes
+.boxes {
+  background: $dark-color-2;
+  color: #fff;
+
+  .box {
+    margin: 2rem 1rem;
+
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+}
